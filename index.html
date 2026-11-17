@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Μεγάλη Γραμματεία | Αναφορά Εκκρεμοτήτων</title>
+    <meta
+      name="description"
+      content="Επαγγελματική αναφορά εκκρεμοτήτων από τα εισερχόμενα emails με θέμα List to Do."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="header-banner" role="img" aria-label="Εικόνα επικεφαλίδας Μεγάλης Γραμματείας">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+          <div class="brand-block">
+            <div class="brand-mark">ΜΓ</div>
+            <div>
+              <p class="eyebrow">Μεγάλη Γραμματεία</p>
+              <h1>Αναφορά Εκκρεμοτήτων</h1>
+            </div>
+          </div>
+          <div class="mail-address">
+            <span class="label">Εισερχόμενα</span>
+            <strong>grand.secretary@nglgreece.gr</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <aside class="sidebar panel">
+        <div class="panel-header">
+          <div>
+            <p class="mini-label">Email Intake</p>
+            <h2>List to Do</h2>
+          </div>
+          <span id="countBadge" class="count-badge">0</span>
+        </div>
+
+        <div class="filters">
+          <label>
+            <span>Αναζήτηση</span>
+            <input id="searchInput" type="text" placeholder="Αναζήτηση θεμάτων..." />
+          </label>
+          <label>
+            <span>Κατάσταση</span>
+            <select id="statusFilter">
+              <option value="all">Όλες</option>
+              <option value="Σε εξέλιξη">Σε εξέλιξη</option>
+              <option value="Εκκρεμεί">Εκκρεμεί</option>
+              <option value="Ολοκληρώθηκε">Ολοκληρώθηκε</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="taskList" class="task-list" aria-live="polite"></div>
+      </aside>
+
+      <section class="detail-panel panel">
+        <div id="emptyState" class="empty-state">
+          <div class="empty-icon">✓</div>
+          <h3>Επιλέξτε ένα θέμα</h3>
+          <p>Πατήστε σε οποιαδήποτε εκκρεμότητα για να δείτε την περίληψη, τον αποστολέα, την ημερομηνία και τα συνημμένα.</p>
+        </div>
+
+        <article id="taskDetail" class="task-detail hidden" aria-live="polite"></article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
