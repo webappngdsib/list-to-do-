@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" role="img" aria-labelledby="title desc">
+  <title id="title">Grand Secretariat header background</title>
+  <desc id="desc">Professional blue government-style banner with geometric lines and subtle pattern.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d2b4d"/>
+      <stop offset="55%" stop-color="#123b6a"/>
+      <stop offset="100%" stop-color="#1d5d8f"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="420" fill="url(#bg)"/>
+  <g opacity="0.28">
+    <path d="M0 330 L360 200 L660 340 L980 180 L1300 310 L1600 210 V420 H0 Z" fill="#dfeaf8"/>
+    <path d="M0 270 L300 150 L600 290 L960 140 L1280 260 L1600 170 V420 H0 Z" fill="#b6cee8"/>
+  </g>
+  <g opacity="0.22" stroke="url(#line)" stroke-width="2">
+    <path d="M0 90 H1600"/>
+    <path d="M0 160 H1600"/>
+    <path d="M0 230 H1600"/>
+    <path d="M0 300 H1600"/>
+    <path d="M0 370 H1600"/>
+    <path d="M110 0 V420"/>
+    <path d="M350 0 V420"/>
+    <path d="M620 0 V420"/>
+    <path d="M930 0 V420"/>
+    <path d="M1230 0 V420"/>
+    <path d="M1460 0 V420"/>
+  </g>
+  <g opacity="0.18" fill="#ffffff">
+    <circle cx="1280" cy="95" r="58"/>
+    <circle cx="1362" cy="95" r="38"/>
+    <circle cx="1208" cy="142" r="32"/>
+  </g>
+</svg>
